@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 t{
-    color:violet;
+    /* color:violet; */
+    color:white;
+    font-size: 4vw;
 }
 article{
     background-color: antiquewhite;
@@ -13,9 +15,15 @@ article{
     flex-direction: row;
 }
 /* ヘッダーについて */
+#home{
+    background-image: url(img/toppage.jpg);
+}
 .page-header{
+    background-size: cover;
+    background-position: center top;
     display: flex;
     justify-content: space-between; 
+    height:150pt;
 }
 .main-nav{
     list-style: none;
@@ -31,10 +39,13 @@ a{
     text-decoration: none; 
     color:black;
 }
-.button{
+/* ヘッダーのボタン設定 */
+.button{font-size: 18pt;
+
     border-radius: 5px;
     padding: 4pt 8pt;
-    color: violet;
+    /* color: violet; */
+    color:black;
 }
 .button:hover{
     background: violet;
