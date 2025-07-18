@@ -1,5 +1,7 @@
-p{
-    color:orange;
+@charset "UTF-8";
+
+t{
+    color:violet;
 }
 article{
     background-color: antiquewhite;
@@ -9,4 +11,32 @@ article{
 .container{
     display:flex;
     flex-direction: row;
+}
+/* ヘッダーについて */
+.page-header{
+    display: flex;
+    justify-content: space-between; 
+}
+.main-nav{
+    list-style: none;
+    display:flex;
+    text-transform: uppercase;
+}
+.main-nav li{
+    /* ヘッダーの間隔設定 */
+    margin-left: 36pt;
+}
+a{
+    /* 下線をなくす */
+    text-decoration: none; 
+    color:black;
+}
+.button{
+    border-radius: 5px;
+    padding: 18pt 32pt;
+    color: violet;
+}
+.button:hover{
+    background: violet;
+    color:#fff;
 }
