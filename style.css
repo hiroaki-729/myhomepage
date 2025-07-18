@@ -24,7 +24,7 @@ article{
 }
 .main-nav li{
     /* ヘッダーの間隔設定 */
-    margin-left: 36pt;
+    margin-left: 28pt;
 }
 a{
     /* 下線をなくす */
@@ -33,7 +33,7 @@ a{
 }
 .button{
     border-radius: 5px;
-    padding: 18pt 32pt;
+    padding: 4pt 8pt;
     color: violet;
 }
 .button:hover{
