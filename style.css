@@ -1,29 +1,27 @@
 @charset "UTF-8";
 
 t{
-    /* color:violet; */
-    color:white;
+    color:violet;
     font-size: 4vw;
 }
-article{
+/* .exp{
     background-color: antiquewhite;
     border-width: thin ;
     border-style: solid;
-}
+} */
 .container{
     display:flex;
     flex-direction: row;
 }
 /* ヘッダーについて */
-#home{
+/* #home{
     background-image: url(img/toppage.jpg);
-}
+} */
 .page-header{
-    background-size: cover;
-    background-position: center top;
     display: flex;
     justify-content: space-between; 
-    height:150pt;
+    height:60pt;
+    border-bottom: 4px solid black;
 }
 .main-nav{
     list-style: none;
@@ -32,7 +30,7 @@ article{
 }
 .main-nav li{
     /* ヘッダーの間隔設定 */
-    margin-left: 28pt;
+    margin-left: 25pt;
 }
 a{
     /* 下線をなくす */
@@ -44,10 +42,15 @@ a{
 
     border-radius: 5px;
     padding: 4pt 8pt;
-    /* color: violet; */
-    color:black;
+    color: violet;
+    /* color:black; */
 }
 .button:hover{
     background: violet;
     color:#fff;
 }
+/* .m{
+    list-style: none;
+    display:flex;
+    text-transform: uppercase;
+} */
