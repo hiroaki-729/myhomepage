@@ -2,7 +2,7 @@
 
 t{
     color:violet;
-    font-size: 4vw;
+    font-size: clamp(16px, 4vw, 40px);
 }
 /* .exp{
     background-color: antiquewhite;
@@ -14,8 +14,8 @@ t{
     flex-direction: row;
 }
 /* ヘッダーについて */
-/* #home{
-    background-image: url(img/toppage.jpg);
+/* .home{
+    flex-wrap:wrap;
 } */
 .page-header{
     display: flex;
@@ -35,11 +35,11 @@ t{
 a{
     /* 下線をなくす */
     text-decoration: none; 
-    color:black;
+
 }
 /* ヘッダーのボタン設定 */
-.button{font-size: 18pt;
-
+.button{
+    font-size: 18pt;
     border-radius: 5px;
     padding: 4pt 8pt;
     color: violet;
@@ -49,8 +49,19 @@ a{
     background: violet;
     color:#fff;
 }
-/* .m{
-    list-style: none;
-    display:flex;
-    text-transform: uppercase;
-} */
+.selectyear{
+    display:grid;
+    text-align: center;
+    /* gap:20pt; */
+    grid-template-columns:repeat(auto-fit,minmax(450px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+    /* margin-left: 20pt; */
+    /* flex-wrap:wrap; */
+}
+.button_year{
+    /* text-align: center; */
+    max-width: 450px;
+    height: auto;
+    color: violet;
+}
