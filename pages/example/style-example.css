@@ -1,0 +1,15 @@
+t{
+    color:violet;
+    font-size: clamp(30px, 4vw, 40px);
+    /* font-size: 40px; */
+}
+.page-header{
+    display: flex;
+    justify-content: space-between; 
+    height:60pt;
+    border-bottom: 4px solid black;
+}
+.img{
+    max-width: 500px;
+    height: auto;
+}
