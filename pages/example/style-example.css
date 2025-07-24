@@ -13,3 +13,18 @@ t{
     max-width: 500px;
     height: auto;
 }
+.foot{
+    height: 80px;
+    border-top: 4px solid violet;
+}
+.changesite{
+    display: flex;
+    justify-content: space-around;
+}
+.b{
+    color: black;
+    text-decoration: none;
+}
+.b:hover{
+    color: violet;
+}
