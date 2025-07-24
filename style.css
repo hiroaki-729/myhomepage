@@ -5,19 +5,12 @@ t{
     font-size: clamp(30px, 4vw, 40px);
     /* font-size: 40px; */
 }
-/* .exp{
-    background-color: antiquewhite;
-    border-width: thin ;
-    border-style: solid;
-} */
 .container{
     display:flex;
     flex-direction: row;
 }
 /* ヘッダーについて */
-/* .home{
-    flex-wrap:wrap;
-} */
+
 .page-header{
     display: flex;
     justify-content: space-between; 
@@ -80,4 +73,11 @@ a{
     max-width: 450px;
     height: auto;
     color: violet;
+}
+.foot{
+    height: 80px;
+    border-top: 4px solid violet;
+}
+.b{
+    color: black;
 }
