@@ -1,6 +1,10 @@
 @charset "UTF-8";
-
-t{
+/* ヘッダにある上の空白をなくす */
+body {
+    margin: 0;
+    padding: 0;
+}
+.t{
     color:violet;
     font-size: clamp(30px, 4vw, 40px);
     /* font-size: 40px; */
@@ -10,12 +14,13 @@ t{
     flex-direction: row;
 }
 /* ヘッダーについて */
-
 .page-header{
+    position: fixed;
     display: flex;
-    justify-content: space-between; 
     height:60pt;
+    width:100%;
     border-bottom: 4px solid black;
+    background-color: #fff;
 }
 .main-nav{
     list-style: none;
@@ -31,19 +36,7 @@ a{
     text-decoration: none; 
 
 }
-/* ヘッダのボタン設定 */
-.header-button{
-    font-size: 18pt;
-    border-radius: 5px;
-    padding: 4pt 8pt;
-    color: violet;
-    /* color:black; */
-}
-
-.header-button:hover{
-    background: violet;
-    color:#fff;
-}
+/* 年を選択するボタンに関する設定 */
 .selectyear{
     display:grid;
     text-align: center;
