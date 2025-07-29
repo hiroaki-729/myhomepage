@@ -17,7 +17,7 @@ body {
 .page-header{
     position: fixed;
     display: flex;
-    height:60pt;
+    height:70pt;
     width:100%;
     border-bottom: 4px solid black;
     background-color: #fff;
