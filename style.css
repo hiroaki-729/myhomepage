@@ -14,7 +14,9 @@ h1 {
 }
 .st{
     font-size: clamp(60px, 4vw, 80px);
-
+}
+.w{
+    color: white;
 }
 .st-l{
     color:white;
@@ -103,10 +105,11 @@ a{
 .reportbutton{
     display: inline-block;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 40px;
     width: 100px;
-    color: blueviolet;
-    border-style: solid;
+    color: white;
+    background: blueviolet;
+    border-style: solid black;
     padding: 0.1px;
 }
 .reportbutton:hover{
