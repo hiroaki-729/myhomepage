@@ -72,11 +72,12 @@ a{
     font-size: 20pt;
     border-radius: 5px;
     padding: 4pt 8pt;
-    color: violet;
+    /* color: violet; */
+    color:blueviolet;
 }
 
 .button:hover{
-    background: violet;
+    background: blueviolet;
     color:#fff;
 }
 .button_year{
@@ -86,7 +87,7 @@ a{
 }
 .foot{
     height: 80px;
-    border-top: 4px solid violet;
+    border-top: 4px solid blueviolet;
 }
 /* フッタで別のサイトに飛ぶためのボタン */
 .changesite{
@@ -97,5 +98,23 @@ a{
     color: black;
 }
 .b:hover{
-    color: violet;
+    color: blueviolet;
+}
+.reportbutton{
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    width: 100px;
+    color: blueviolet;
+    border-style: solid;
+    padding: 0.1px;
+}
+.reportbutton:hover{
+    color:black;
+    background: blueviolet;
+}
+.report{
+    display: flex;
+    
+    
 }
