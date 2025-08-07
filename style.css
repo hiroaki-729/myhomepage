@@ -20,6 +20,7 @@ h1 {
 }
 .st-l{
     color:white;
+    background-size: cover;
     border-bottom: 8px solid black;
     height: 240px;
     text-shadow:
@@ -27,6 +28,7 @@ h1 {
          1px -1px 0 black,
         -1px  1px 0 black,
          1px  1px 0 black;
+        
 
 }
 .container{
