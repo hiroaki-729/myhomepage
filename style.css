@@ -26,11 +26,6 @@ h1 {
     height: 240px;
     text-shadow: 0 0 10px black;
 }
- /* .st-l {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-} */
 
 .content {
     position: absolute;
@@ -39,10 +34,6 @@ h1 {
     z-index: 999;
     color: white;
     text-shadow: 0 0 10px black;
-}
-.container{
-    display:flex;
-    flex-direction: row;
 }
 /* ヘッダーについて */
 .page-header{
@@ -85,14 +76,20 @@ a{
     text-align: center;
     font-size: 20pt;
     border-radius: 5px;
-    padding: 4pt 8pt;
+    padding: 10pt 20pt;
     /* color: violet; */
     color:blueviolet;
-}
 
+}
 .button:hover{
     background: blueviolet;
     color:#fff;
+}
+.button img {
+  transition: transform 0.3s ease;
+}
+.button:hover img {
+  transform: scale(1.05); /* 1.05倍に拡大 */
 }
 .button_year{
     /* text-align: center; */

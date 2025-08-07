@@ -1,17 +1,8 @@
-const lists = [
-  { url: "img/top1.jpg", position: "center 63%" },
-  { url: "img/top2.jpg", position: "center 58%" },
-  { url: "img/top3.jpg", position: "center 45%" },
-  { url: "img/top5.jpg", position: "center 50%" },
-  { url: "img/top6.jpg", position: "center 35%" },
-  { url: "img/top7.jpg", position: "center 55%" }
-];
-
 const track = document.getElementById("sliderTrack");
 const slides = document.querySelectorAll(".slide");
 const slideCount = slides.length;
 let index = 0;
-const interval = 5000;
+const interval = 5000; //スライド時間指定
 
 // 最初のスライドをクローンして末尾に追加（無限ループ用）
 const firstClone = slides[0].cloneNode(true);
