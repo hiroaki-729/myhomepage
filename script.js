@@ -1,23 +1,36 @@
-const lists=[
-    {
-        url:"img/top1.png",
-        position:"center 63%"
-    },
-    {
-        url:"img/top2.png",
-        position:"center 63%"
-    }
-]
-let index=0;
-const interval = 5000; // 5秒ごとに切り替え
-const header = document.getElementById('headerbackground'); // id取得
+const lists = [
+  { url: "img/top1.jpg", position: "center 63%" },
+  { url: "img/top2.jpg", position: "center 58%" },
+  { url: "img/top3.jpg", position: "center 45%" },
+  { url: "img/top5.jpg", position: "center 50%" },
+  { url: "img/top6.jpg", position: "center 35%" },
+  { url: "img/top7.jpg", position: "center 55%" }
+];
 
-function changeBackground() {
-    const current = lists[index];
-    header.style.backgroundImage = `url(${current.url})`;
-    header.style.backgroundPosition = current.position;
-    // background-sizeはstyle.cssで定義済みなのでここでは省略可
-    index = (index + 1) % lists.length;
+const track = document.getElementById("sliderTrack");
+const slides = document.querySelectorAll(".slide");
+const slideCount = slides.length;
+let index = 0;
+const interval = 5000;
+
+// 最初のスライドをクローンして末尾に追加（無限ループ用）
+const firstClone = slides[0].cloneNode(true);
+track.appendChild(firstClone);
+
+function moveSlide() {
+  index++;
+  track.style.transition = "transform 1s ease-in-out";
+  track.style.transform = `translateX(-${index * 100}%)`;
+
+  // 最後のクローンに到達したら、瞬時に戻す
+  if (index === slideCount) {
+    setTimeout(() => {
+      track.style.transition = "none";
+      track.style.transform = `translateX(0%)`;
+      index = 0;
+    }, 1000); // transition時間と同じ
+  }
 }
-changeBackground();
-setInterval(changeBackground, interval); //一定時間ごとに関数実行
+
+// 5秒ごとにスライド
+setInterval(moveSlide, interval);
